@@ -17,6 +17,10 @@
   color: #ffffff;
 }
 
+h1 {
+  font-size: 1px;
+  color: #030303;
+}
 .nav-row {
   display: flex;
   justify-content: space-between;
