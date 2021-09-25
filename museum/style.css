@@ -142,7 +142,7 @@ h1 {
 
 
 .welcome__button:hover {
-  background-color: #b33333;
+  background-color: #9D8665;
 }
 
 /*section 2*/
@@ -167,7 +167,7 @@ h1 {
 }
 
 .visiting__pages > * {
-  flex: 0 0 33, 3333%;
+  flex: 0 0 33,3333%;
 }
 
 .visiting__title {
@@ -190,15 +190,11 @@ h1 {
   margin: 0;
   padding: 0;
   border: 0;
-  margin-bottom: 70px;
+      
 }
 
 .pages__title {
   text-decoration: none;
-}
-.pages__title {
-  
-  text-decoration: underline solid #710707 2px;
   font-size: 32px;
   font-family: "Forum", cursive;
   font-weight: 400;
@@ -221,6 +217,19 @@ h1 {
   font-size: 18px;
   font-weight: 200;
   color: #000000;
+}
+
+.visiting__underline {
+  border: 1px solid #710707;
+  width: 300px;
+  
+  margin-top: 9px;
+  margin-bottom: 10px;
+  transition: 1s;
+}
+
+.figure1:hover .visiting__underline {
+  width: 440px;
 }
 
 /* section 3*/
@@ -313,11 +322,20 @@ h1 {
   
 }
 
+/* section Art gallery*/
+.gallery {
+  background-color: #030303;
+  
+}
 
-/* section 5*/
+.gallery_title {
+  color: #ffffff;
+}
+
+/* section 6*/
 
 .tickets {
-  background-color: #030303;
+  background-color: #ffffff;
 
 }
 
@@ -340,7 +358,7 @@ h1 {
 
   margin-bottom: 60;
   position: relative;
-  color: #ffffff;
+  color: #000000;
   text-transform: uppercase;
 
   text-decoration: underline solid #710707 2px;
@@ -350,7 +368,7 @@ h1 {
   margin-top: 180px;
   display: flex;
   justify-content: space-between;
-  color: #ffffff;
+  color: #000000;
   font-family: "Roboto", sans-serif;
   
 }
@@ -403,8 +421,14 @@ height: 262px;
   color: #000000;
 }
 
+.button1:hover {
+  background-color: #9d8665;
+  border: 1px solid #996316;
+  box-shadow: 3px 3px #9d8665;
+  transition: 0.5s;
+}
 
-/* section 6*/
+/* section 7*/
 
 .contacts {
   background-color: #ffffff;
@@ -516,8 +540,30 @@ height: 262px;
 .socialnets li {
   margin: 0 15px;
   align-items: baseline;
+  list-style-type: none;
+  width: 48px;
+  height: 48px;
 }
 
 .socialnets li :last-child {
   margin-right: 0;
 }
+
+.socialnets_item {
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+    
+}
+.socialnets_item:hover {
+  border: 2px solid #9d8665;
+  filter: 
+  invert(40%) 
+  sepia(80%) 
+  saturate(450%) 
+  hue-rotate(20deg) 
+  brightness(70%) 
+  contrast(80%);
+  
+}
+
