@@ -8,7 +8,7 @@ html {
   scroll-behavior: smooth; 
 }
 .container {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -46,7 +46,7 @@ h1 {
   margin: 0;
   padding: 0;
   list-style: none;
-
+  max-width: 720px;
   display: flex;
 }
 
@@ -67,10 +67,11 @@ h1 {
 /* section 1*/
 
 .container1 {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   padding-left: 240px;
   padding-right: 240px;
+  
 }
 
 .welcome {
@@ -116,8 +117,8 @@ h1 {
 .welcome-img {
   margin-left: -120px;
   margin-right: -240px;
-  width: 1215px;
-  height: 750px;
+  max-width: 1215px;
+  max-height: 750px;
 }
 
 .welcome__button {
@@ -150,7 +151,7 @@ h1 {
   background-color: #ffffff;
 }
 .container2 {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -229,7 +230,7 @@ h1 {
 }
 
 .container3 {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   padding-top: 75px;
   padding-bottom: 75px;
@@ -276,7 +277,7 @@ h1 {
 }
 
 .container4 {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   padding-top: 85px;
   padding-bottom: 25px;
@@ -321,7 +322,7 @@ h1 {
 }
 
 .container5 {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   
   padding-top: 75px;
@@ -410,7 +411,7 @@ height: 262px;
 }
 
 .container6 {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   padding-top: 85px;
   padding-bottom: 25px;
@@ -454,6 +455,10 @@ height: 262px;
   padding-bottom: 20px;
 }
 
+.li a {
+  text-decoration: none;
+  color: #030303;
+}
 .contacts__body__map {
   padding-bottom: 50px;
 }
