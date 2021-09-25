@@ -323,14 +323,62 @@ h1 {
 }
 
 /* section Art gallery*/
+.containerG {
+  max-width: 1440px;
+  
+  margin: 0 auto;
+  padding-top: 85px;
+ 
+  
+}
+
 .gallery {
   background-color: #030303;
   
 }
 
-.gallery_title {
+.gallery__title {
+  font-size: 80px;
+  font-family: "Forum", cursive;
+  font-weight: 300;
+  line-height: 1.125;
+  letter-spacing: 5px;
+
+  margin-bottom: 60;
+  position: relative;
   color: #ffffff;
+  text-transform: uppercase;
+
+  text-decoration: underline solid #710707 2px;
 }
+
+.gallery__img {
+  position: relative;
+  z-index: 1;
+  height: 1700px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+ 
+}
+
+.img__mask { 
+  position: relative;
+   height: 10em;
+   width: 100%;
+   margin-top: -7em;
+   bottom: 10px; 
+   background: rgb(3, 3, 3, 1);  
+   opacity: 0.8; 
+   z-index: 2;
+   filter: blur(20px);
+  }
+
+.gallery___img {
+  margin: 12px;
+}
+
 
 /* section 6*/
 
