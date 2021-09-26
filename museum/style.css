@@ -1,22 +1,30 @@
 .main,
 .footer,
-.header {
+.header,
+* {
   margin: 0;
   
 }
 html {
   scroll-behavior: smooth; 
 }
+
+.header {
+  
+  background-color: #030303;
+  color: #ffffff;
+}
 .container {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 0;
+  padding: 80px 240px;
 }
 
 .nav {
-  padding: 80px 240px;
-
-  background-color: #030303;
-  color: #ffffff;
+  //padding: 80px 240px;
+  
+  
+  
 }
 
 h1 {
@@ -31,27 +39,33 @@ h1 {
 .logo {
   display: flex;
   align-items: center;
+  
   font-family: "Forum", cursive;
   font-size: 28px;
   font-weight: 400;
   line-height: 1;
-  width: 50;
+  width: 50px;
   letter-spacing: 5px;
 }
 
 .logo img {
   margin-right: 20px;
+  margin-left: -10px;
+  
+  justify-content: left;
 }
 .navigation ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  max-width: 720px;
+  max-width: 775px;
   display: flex;
+  justify-content: space-between;
+  letter-spacing: 2px;
 }
 
 .navigation li {
-  margin-right: 80px;
+  margin-right: 60px;
 }
 .navigation li:last-child {
   margin-right: 0;
@@ -69,18 +83,19 @@ h1 {
 .container1 {
   max-width: 1440px;
   margin: 0 auto;
-  padding-left: 240px;
-  padding-right: 240px;
-  
+   
 }
 
 .welcome {
   background-color: #030303;
 }
 .welcome-row {
+  max-width: 1440px;
+  padding-bottom: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
   background-color: #030303;
   color: #ffffff;
 }
@@ -100,7 +115,8 @@ h1 {
   line-height: 1.125;
   letter-spacing: 5px;
   margin: 0;
-  margin-bottom: 60;
+  margin-bottom: 25px;
+  padding-top: 22px;
   position: relative;
   /* margin-right: -120px;*/
   z-index: 9;
@@ -111,14 +127,16 @@ h1 {
   font-weight: 300;
   font-family: "Roboto", sans-serif;
   letter-spacing: 2px;
-  padding-bottom: 52px;
+  padding-bottom: 74px;
 }
 
 .welcome-img {
-  margin-left: -120px;
-  margin-right: -240px;
-  max-width: 1215px;
+  max-width: 1000px;
   max-height: 750px;
+  margin-left: -157px;
+  
+  margin-top: -26px;
+  
 }
 
 .welcome__button {
@@ -145,6 +163,25 @@ h1 {
   background-color: #9D8665;
 }
 
+.welcome_pagination {
+    
+  margin-top: -100px;
+  text-align: right;
+  opacity: 0.2;
+}
+
+.welcome_pagination:hover {
+  
+  opacity: 1;
+  transition: 0.5s;
+}
+.welcome_pagination img {
+  max-width: 600px;
+  max-height: 120px;
+  
+}
+
+
 /*section 2*/
 
 .visiting {
@@ -152,7 +189,8 @@ h1 {
 }
 .container2 {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 78px auto;
+
 }
 
 .visiting__pages {
@@ -177,13 +215,13 @@ h1 {
   font-family: "Forum", cursive;
   color: #9d8665;
   text-transform: uppercase;
-  text-decoration: underline solid #710707 3px;
+  
 }
 
 .figure1 img {
   width: 440px;
   height: 285px;
-
+  padding-bottom: 20px;
   border: 0;
 }
 .figure1 {
@@ -213,16 +251,27 @@ h1 {
 }
 
 .pages__text {
+  padding-top: 10px;
+  margin-bottom: 73px;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 200;
   color: #000000;
 }
 
+.title__underline {
+  border: 2px solid #710707;
+  width: 1440px;
+  text-align: left;
+  margin-top: 23px;
+  margin-bottom: 76px;
+  
+}
+
 .visiting__underline {
   border: 1px solid #710707;
   width: 300px;
-  
+  text-align: left;
   margin-top: 9px;
   margin-bottom: 10px;
   transition: 1s;
@@ -230,9 +279,10 @@ h1 {
 
 .figure1:hover .visiting__underline {
   width: 440px;
+  
 }
 
-/* section 3*/
+/* section 3 - Explore*/
 
 .explore {
   background-color: #030303;
@@ -263,10 +313,20 @@ h1 {
   color: #ffffff;
   text-transform: uppercase;
 
-  text-decoration: underline solid #710707 2px;
+}
+
+.explore_title__underline {
+  max-width: 660px;
+  border: 2px solid #710707;
+  text-align: left;
+  margin-top: 23px;
+  margin-bottom: 80px;
+  transition: 2s;
 }
 
 .explore__p {
+  
+  margin-bottom: 25px;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 22px;
@@ -279,7 +339,13 @@ h1 {
   color: #CAAA7D;
   
 }
-/* section 4*/
+
+.explore__img {
+  padding-top: 14px;
+}
+
+
+/* section 4 - Video*/
 
 .video {
   background-color: #ffffff;
@@ -295,7 +361,7 @@ h1 {
 .video__body {
   display: flex;
   justify-content: space-between;
-  padding-top: 30px;
+ // padding-top: 30px;
 }
 
 .video__title {
@@ -303,7 +369,7 @@ h1 {
   font-size: 80px;
   font-weight: 400;
   letter-spacing: 5px;
-  margin-top: 0;
+  //margin-top: -30px;
   font-family: "Forum", cursive;
   color: #9d8665;
   text-transform: uppercase;
@@ -315,7 +381,8 @@ h1 {
   font-size: 22px;
   font-weight: 300;
   line-height: 1.75em;
-  margin-top: 0;
+  margin-top: 10px;
+  padding-right: 27px;
     
 }
 
@@ -325,6 +392,7 @@ h1 {
     
     width: 1440px;
     position: relative;
+    padding-top: 80px;
 }
 
 .video__poster{
@@ -338,14 +406,15 @@ h1 {
   cursor: pointer;
   
   position: absolute;
-  left: 610px;
+  left: 603px;
   right: 610px;
-  top: 205px;
+  top: 293px;
 }
 
 .control__panel {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: #000000;
   width: 1440px;
   height: 85px;
@@ -356,8 +425,8 @@ h1 {
 .video__button__volume, 
 .video__button__fullscreen {
   background: transparent;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
   background-color: #000000;
   cursor: pointer;
   transition: .5s;
@@ -368,7 +437,7 @@ h1 {
   background: linear-gradient(to right, #710707 0%, #710707 40%, #ffffff 40%, #ffffff 100%);
   border: solid 2px #710707;
   height: 8px;
-  width: 812px;
+  width: 930px;
   outline: none;
   transition: background 450ms ease-in;
   -webkit-appearance: none;
@@ -397,11 +466,11 @@ h1 {
 
 .video__button__fullscreen {
   margin-left: 50px;
-  margin-right: 30px;
+  margin-right: 25px;
 }
 
 .video__slides {
-  margin: 45px 0;
+  margin: 40px 0;
   display: flex;
   justify-content: space-between;
 }
@@ -413,14 +482,20 @@ h1 {
 
 .video__pages {
   text-align: center;
+  
+}
+
+.video__pages img {
+  padding-bottom: 0px;
 }
 
 /* section Art gallery*/
+
 .containerG {
   max-width: 1440px;
   
   margin: 0 auto;
-  padding-top: 85px;
+  padding-top: 77px;
  
   
 }
@@ -436,13 +511,12 @@ h1 {
   font-weight: 300;
   line-height: 1.125;
   letter-spacing: 5px;
-
-  margin-bottom: 60;
+  padding-bottom: 60px;
+  margin-bottom: 80;
   position: relative;
   color: #ffffff;
   text-transform: uppercase;
-
-  text-decoration: underline solid #710707 2px;
+  
 }
 
 .gallery__img {
@@ -452,6 +526,7 @@ h1 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  
   overflow: hidden;
  
 }
@@ -473,7 +548,7 @@ h1 {
 }
 
 
-/* section 6*/
+/* section 6 Tickets*/
 
 .tickets {
   background-color: #ffffff;
@@ -486,10 +561,13 @@ h1 {
   
   padding-top: 75px;
   padding-bottom: 75px;
-  display: flex;
-  justify-content: space-between;
+  //display: flex;
+  //justify-content: space-between;
 }
 
+.tickets_title{
+
+}
 .tickets__title {
   font-size: 80px;
   font-family: "Forum", cursive;
@@ -502,11 +580,10 @@ h1 {
   color: #000000;
   text-transform: uppercase;
 
-  text-decoration: underline solid #710707 2px;
 }
 
 .tickets__order {
-  margin-top: 180px;
+  margin-top: 77px;
   display: flex;
   justify-content: space-between;
   color: #000000;
@@ -516,9 +593,15 @@ h1 {
 
 .tickets__type {
 width: 270px;
-height: 262px;
+height: 200px;
+margin-left: 45px;
 
 
+}
+
+.tickets__type__title {
+  margin-bottom: 30px;
+  //margin-top: 5px;
 }
 
 .tickets__type__title,
@@ -528,7 +611,11 @@ height: 262px;
   font-weight: 700;
 }
 
+.order__title {
+  margin-bottom: 23px;
+}
 .order {
+  text-align: right;
   padding-left: 200px;
 
 }
@@ -544,6 +631,7 @@ height: 262px;
   font-family: "Roboto", sans-serif;
   font-size: 22px;
   font-weight: 200;
+  
 }
 
 .button1 {
@@ -642,9 +730,7 @@ height: 262px;
   margin: 0;
   padding: 0;
   list-style: none;
-  
-
-  
+   
 }
 
 
