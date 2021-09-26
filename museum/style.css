@@ -548,7 +548,7 @@ h1 {
 }
 
 
-/* section 6 Tickets*/
+/* section 6 - Tickets*/
 
 .tickets {
   background-color: #ffffff;
@@ -561,13 +561,9 @@ h1 {
   
   padding-top: 75px;
   padding-bottom: 75px;
-  //display: flex;
-  //justify-content: space-between;
+  
 }
 
-.tickets_title{
-
-}
 .tickets__title {
   font-size: 80px;
   font-family: "Forum", cursive;
@@ -601,7 +597,27 @@ margin-left: 45px;
 
 .tickets__type__title {
   margin-bottom: 30px;
-  //margin-top: 5px;
+  
+}
+
+.radio-button {
+  
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.tickets__txt {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  
 }
 
 .tickets__type__title,
@@ -624,22 +640,65 @@ margin-left: 45px;
   font-family: "Roboto", sans-serif;
   font-size: 22px;
   font-weight: 200;
-  
+  text-align: left;
+  margin-left: 25px;
+  margin-bottom: 12px;
+  margin-top: 10px;
+  justify-content: end;
 }
 
-.tickets__txt {
-  font-family: "Roboto", sans-serif;
-  font-size: 22px;
-  font-weight: 200;
-  
+.button__amount {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 23px;
+  border: 3px solid #000000;
+  height: 46px;
+  width: 145px;
 }
+
+.amount__button__number {
+  display: block;
+  all: unset;
+  width: 3em;
+  text-align: center;
+  background: transparent;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+  width: 40px;
+}
+
+.button__item {
+  font-size: 32px;
+  width: 18px;
+  height: 38px;
+  margin: auto;
+  color: #000000;
+  background: transparent;
+  border: none;
+}
+
+.order__sum {
+  margin-top: 48px;
+  text-align: right;
+  letter-spacing: 1.65px;
+}
+
+
 
 .button1 {
   cursor: pointer;
   transition: background-color 0.2s ease-in;
-  
+  background-color: #000000;
   width: 175px;
   height: 50px;
+  margin-top: 60px;
   align-items: center;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -647,17 +706,21 @@ margin-left: 45px;
   font-weight: 300;
   line-height: 1.75em;
   letter-spacing: 2px;
-  color: #000000;
+  color: #ffffff;
+  border-radius: 2px;
+  transition: 1s;
 }
+
 
 .button1:hover {
   background-color: #9d8665;
-  border: 1px solid #996316;
-  box-shadow: 3px 3px #9d8665;
+  border: 3px solid #996316;
+  box-shadow: 5px 5px #9d8665;
+  border-radius: 20px;
   transition: 0.5s;
 }
 
-/* section 7*/
+/* section 7 - Contacts*/
 
 .contacts {
   background-color: #ffffff;
@@ -676,14 +739,14 @@ margin-left: 45px;
 }
 
 .contacts__title {
-  padding-bottom: 100px;
+  padding-bottom: 2px;
   font-size: 80px;
   font-weight: 400;
   letter-spacing: 5px;
   font-family: "Forum", cursive;
   color: #9d8665;
   text-transform: uppercase;
-  text-decoration: underline solid #710707 3px;
+  transition: 1s;
 }
 .contact__list {
   font-family: "Roboto", sans-serif;
@@ -697,7 +760,7 @@ margin-left: 45px;
 }
 
 .contact__title {
-  
+  margin-bottom: 51px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 28px;
@@ -705,7 +768,7 @@ margin-left: 45px;
 }
 
 .li {
-  padding-bottom: 20px;
+  padding-bottom: 23px;
 }
 
 .li a {
@@ -718,6 +781,31 @@ margin-left: 45px;
 
 /* footer*/
 
+
+.footer {
+  background-color: #030303;
+  color: #ffffff;
+  
+}
+
+.logo_footer {
+  display: flex;
+  align-items: center;
+  margin-top: -95px;
+  font-family: "Forum", cursive;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1;
+  width: 50px;
+  letter-spacing: 5px;
+}
+
+.logo_footer img {
+  margin-right: 24px;
+  margin-left: -10px;
+ 
+  justify-content: left;
+}
 .socialnets {
   margin: 0;
   padding: 0;
@@ -737,23 +825,22 @@ margin-left: 45px;
 .navigation2 {
   display: flex;
   justify-content: space-between;
-  
+  width: 363px;
+  height: 128px;
  
-}
-
-.navigation2__list2 {
-  margin-left: 150px;
-  width: max-content;
-  
 }
 
 .navigation2__list1 li,
 .navigation2__list2 li {
-  padding-bottom: 20px;
+  padding-bottom: 25px;
+  margin-left: -52px;
+  margin-right: 55px;
+  letter-spacing: 2px;
 }
 
 
-.navigation2 a {
+.navigation2 a,
+.footer__end__list a {
   color: #ffffff;
   text-decoration: none;
   font-size: 22px;
@@ -764,8 +851,12 @@ margin-left: 45px;
   margin-right: 150px;
 }
 
+.nets {
+  width: 340px;
+}
 .socialnets li {
-  margin: 0 15px;
+  margin: 0 13px;
+  margin-top: 75px;
   align-items: baseline;
   list-style-type: none;
   width: 48px;
@@ -784,13 +875,34 @@ margin-left: 45px;
 }
 .socialnets_item:hover {
   border: 2px solid #9d8665;
-  filter: 
-  invert(40%) 
-  sepia(80%) 
-  saturate(450%) 
-  hue-rotate(20deg) 
-  brightness(70%) 
-  contrast(80%);
+  filter: invert(40%) sepia(80%) saturate(450%) hue-rotate(20deg) brightness(70%) contrast(80%);
   
+}
+
+.footer__hr {
+  border: 2px solid #666666;
+  width: 100%;
+  margin-top: -30px;  
+  margin-bottom: 10px;
+}
+
+.footer__end {
+  max-width: 1440px;
+  margin: 50px auto 0;
+  padding-bottom: 60px;
+
+}
+
+.footer__end__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 22px;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+
 }
 

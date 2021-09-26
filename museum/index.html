@@ -251,19 +251,22 @@
                                     <div class="radio-button">
                                       <input type="radio" id="ticketChoice1"
                                        name="tickett" value="1" checked>
-                                      <label for="ticketChoice1">  Permanent exhibition</label>
+                                       <span class="checkmark"></span>
+                                      <label for="ticketChoice1">&emsp; Permanent exhibition</label>
                                   
-                                  <br>
-                                  <br>
+                                    <br>
+                                    <br>
                                       <input type="radio" id="ticketChoice2"
                                        name="tickett" value="2">
-                                      <label for="ticketChoice2">  Temporary exhibition</label>
+                                       <span class="checkmark"></span>
+                                      <label for="ticketChoice2">&emsp; Temporary exhibition</label>
                                   
-                                  <br>
-                                  <br>
+                                    <br>
+                                    <br>
                                       <input type="radio" id="ticketChoice3"
                                        name="tickett" value="3">
-                                      <label for="ticketChoice3">  Combined Admission</label>
+                                       <span class="checkmark"></span>
+                                      <label for="ticketChoice3">&emsp; Combined Admission</label>
                                     </div>
                                    
                             </form>
@@ -273,26 +276,35 @@
                             <h4 class="order__title">Amount</h4>
                             <div class="order__basic">
                                 <h5 class="order__age">Basic 18+</h5>
-                                <input type="number" min="0" max="20">
+
+                                <div class="button__amount">
+                                    <button type="button" onclick="this.nextElementSibling.stepDown()" class="button__item">&ndash;</button>
+                                    <input type="number" min="0" max="20" value="1" readonly class="amount__button__number">
+                                    <button type="button" onclick="this.previousElementSibling.stepUp()" class="button__item">+</button>
+                                </div>
 
                             </div>
                             <div class="order__senior">
                                 <h5 class="order__age">Senior 65+</h5>
-                                <input type="number" min="0" max="20">
-
+                                <div class="button__amount">
+                                    <button type="button" onclick="this.nextElementSibling.stepDown()" class="button__item">&ndash;</button>
+                                    <input type="number" min="0" max="20" value="1" readonly class="amount__button__number">
+                                    <button type="button" onclick="this.previousElementSibling.stepUp()" class="button__item">+</button>
+                                </div>
                             </div>
-                            <p class="order__sum"> Total €220
-
-                            </p>
-
+                            <p class="order__sum">Total €220</p>
                             <div>
                                 <button class="button1" type="submit">Buy now</button>
                             </div>
+                            
 
                         </div>
+                        
                     
                 </div>
-                
+                <div class="parallax">
+
+                </div>
             </div>
         </section>
         <section class="contacts">
@@ -322,9 +334,10 @@
         <nav class="nav">
             <div class="container">
                 <div class="nav-row">
-                    <div class="logo">
+                    <div class="logo_footer">
                         <img src="./assets/svg/logo1.svg" alt="logo"> 
-                          <span>LOUVRE</span></div>
+                          <span>LOUVRE</span>
+                    </div>
                     <div class="navigation2">
                         <ul class="navigation2__list1">
                             
@@ -353,6 +366,15 @@
                 </div>
             </div>
         </nav>
+        <hr class="footer__hr">
+        <div class="footer__end">
+           <ul class="footer__end__list">
+               <li>	&COPY; 2021 </li>
+               <li><a href="https://rs.school/js/" target="_blank">
+                The Rolling Scopes School</a></li>
+               <li><a href="https://github.com/TatsiaA" target="_blank" class="author"> TatsiaA </a> </li>
+           </ul> 
+        </div>
 
     </footer>   
     <script src="./range.js"></script>
