@@ -722,6 +722,17 @@ margin-left: 45px;
   transition: 0.5s;
 }
 
+.parallax {
+  width: 100%;
+  height: 400px;
+  margin-top: -3px;
+  margin-bottom: 70px;
+  background-image: url(./assets/img/parallax.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
 /* section 7 - Contacts*/
 
 .contacts {
@@ -731,7 +742,7 @@ margin-left: 45px;
 .container6 {
   max-width: 1440px;
   margin: 0 auto;
-  padding-top: 85px;
+  padding-top: 3px;
   padding-bottom: 25px;
 }
 
@@ -780,6 +791,7 @@ margin-left: 45px;
 .contacts__body__map {
   padding-bottom: 50px;
 }
+
 
 /* footer*/
 
