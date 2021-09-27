@@ -11,19 +11,20 @@ html {
 
 .header {
   
+  
   background-color: #030303;
   color: #ffffff;
 }
 .container {
-  max-width: 1440px;
-  margin: 0;
-  padding: 80px 240px;
+ 
+  padding: 80px 0px;
 }
 
 .nav {
-  //padding: 80px 240px;
+  max-width: 1440px;
+  margin: 0 auto;
   
-  
+   
   
 }
 
@@ -32,14 +33,15 @@ h1 {
   color: #030303;
 }
 .nav-row {
+  max-width: 1440px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  
 }
 .logo {
   display: flex;
   align-items: center;
-  
+  justify-content: left;
   font-family: "Forum", cursive;
   font-size: 28px;
   font-weight: 400;
@@ -50,7 +52,6 @@ h1 {
 
 .logo img {
   margin-right: 20px;
-  margin-left: -10px;
   
   justify-content: left;
 }
@@ -65,10 +66,11 @@ h1 {
 }
 
 .navigation li {
-  margin-right: 60px;
+  margin-right: 56px;
 }
 .navigation li:last-child {
   margin-right: 0;
+  padding-right: 10px;
 }
 .navigation a {
   color: #ffffff;
@@ -802,8 +804,6 @@ margin-left: 45px;
 
 .logo_footer img {
   margin-right: 24px;
-  margin-left: -10px;
- 
   justify-content: left;
 }
 .socialnets {
@@ -812,6 +812,7 @@ margin-left: 45px;
   list-style: none;
 
   display: flex;
+  justify-content: space-between;
 }
 
 .navigation2 ul {
@@ -855,9 +856,9 @@ margin-left: 45px;
   width: 340px;
 }
 .socialnets li {
-  margin: 0 13px;
+  margin: 0;
   margin-top: 75px;
-  align-items: baseline;
+  align-items: center;
   list-style-type: none;
   width: 48px;
   height: 48px;
@@ -868,7 +869,7 @@ margin-left: 45px;
 }
 
 .socialnets_item {
-  padding: 10px;
+  padding: 11px;
   border: 1px solid #ffffff;
   border-radius: 30px;
     
