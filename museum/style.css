@@ -533,16 +533,41 @@ h1 {
 }
 
 .gallery__img {
+  
   position: relative;
   z-index: 1;
   height: 1700px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  
+  row-gap: 18px;
+  column-gap: 20px;
+  align-items: center;
   overflow: hidden;
  
 }
+
+#galler figure {
+  flex: 1; margin: 0;
+  min-width: 300px; position: relative;
+  
+  }
+  
+  #galler figure img {
+    width: 100%; height: auto;
+    opacity: 0; transition: .5s;
+  
+  }
+  
+  #galler figure img.halvsies {
+    flex: .5; min-width: 150px;
+  
+  }
+  
+  #galler figure img.visible { 
+    opacity: 1; 
+  }
+  
 
 .img__mask { 
   position: relative;
@@ -556,7 +581,7 @@ h1 {
    filter: blur(20px);
   }
 
-.gallery___img {
+.gallery__img figure img {
   margin: 12px;
 }
 
