@@ -22,8 +22,13 @@
                         <img src="./assets/svg/logo1.svg" alt="logo"> 
                           <span>LOUVRE</span>
                     </div>
+                    <div class="burger_menu">
+                        <span class="tp"></span>
+                        <span class="ct"></span>
+                        <span class="bt"></span>
+                    </div>
                     <div class="navigation">
-                        <ul>
+                        <ul class="nav_list">
                             <li> <a href="#V">Visiting</a> </li>
                             <li> <a href="#P">Explore</a> </li>
                             <li> <a href="#Video">Video</a> </li>
@@ -51,14 +56,16 @@
                         
                     </div>
                     <div class="welcome-img">
-                        <img src="./assets/img/1-1000x750.jpg" alt="welcome">
+                       <img src="./assets/img/1-1000x750.jpg" alt="img"> 
                     </div>
+                    
 
                 </div>
                 <div class="welcome_pagination">
-                     <img src="./assets/img/Slider-pagination.png" alt="pages">
+                  <img src="./assets/img/Slider-pagination.png" alt="pages">   
+                </div>
                      
-                
+            </div>   
         </section>
         <section class="visiting">
             <div class="container2">
@@ -153,7 +160,7 @@
                           in any way, but because it looked different.</p>
                 </div>
                 <div class="explore__img">
-                    <img src="./assets/img/img2-720x700h.jpg" alt="picture">
+                    <img src="./assets/img/Rectangle.jpg" alt="picture">
                 </div>
 
             </div>
@@ -249,21 +256,21 @@
                             <br>
                             <form class="tickets__txt">
                                     <div class="radio-button">
-                                      <input type="radio" id="ticketChoice1"
+                                      <input type="radio" id="ticketChoice1" class="input-radio"
                                        name="tickett" value="1" checked>
                                        <span class="checkmark"></span>
                                       <label for="ticketChoice1">&emsp; Permanent exhibition</label>
                                   
                                     <br>
                                     <br>
-                                      <input type="radio" id="ticketChoice2"
+                                      <input type="radio" id="ticketChoice2" class="input-radio"
                                        name="tickett" value="2">
                                        <span class="checkmark"></span>
                                       <label for="ticketChoice2">&emsp; Temporary exhibition</label>
                                   
                                     <br>
                                     <br>
-                                      <input type="radio" id="ticketChoice3"
+                                      <input type="radio" id="ticketChoice3" class="input-radio"
                                        name="tickett" value="3">
                                        <span class="checkmark"></span>
                                       <label for="ticketChoice3">&emsp; Combined Admission</label>
@@ -294,7 +301,7 @@
                             </div>
                             <p class="order__sum">Total €220</p>
                             <div>
-                                <button class="button1" type="submit">Buy now</button>
+                                <button class="button1" type="submit">Buy Now</button>
                             </div>
                             
 
@@ -378,7 +385,9 @@
         </div>
 
     </footer>   
-    <script src="./range.js"></script>
-    <script src="js/gallery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="./assets/js/range.js" defer></script>
+    <script src="./assets/js/gallery.js"></script>
+    <script src="./assets/js/burger.js"></script>
 </body>
 </html>
