@@ -484,7 +484,7 @@ h1 {
 }
 
 .progress__range {
-  background: linear-gradient(to right, #710707 0%, #710707 53%, #ffffff 53%, #ffffff 100%);
+  background: linear-gradient(to right, #710707 0%, #710707 40%, #ffffff 40%, #ffffff 100%);
   border: solid 2px #710707;
   height: 6px;
   width: 930px;
@@ -495,7 +495,7 @@ h1 {
 }
 
 .progress__range__volume {
-  background: linear-gradient(to right, #710707 0%, #710707 53%, #ffffff 53%, #ffffff 100%);
+  background: linear-gradient(to right, #710707 0%, #710707 43%, #ffffff 43%, #ffffff 100%);
   border: solid 2px #710707;
   height: 6px;
   width: 155px;
