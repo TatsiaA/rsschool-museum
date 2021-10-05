@@ -2227,7 +2227,7 @@ margin-left: 45px;
     
     .pages__title {
       text-decoration: none;
-      font-size: 28px;
+      font-size: 22px;
       font-family: "Forum", cursive;
       font-weight: 400;
       letter-spacing: 3px;
@@ -2239,7 +2239,7 @@ margin-left: 45px;
     
     .pages__360 {
       font-family: "Roboto", sans-serif;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 100;
       color: #000000;
     }
@@ -2282,11 +2282,10 @@ margin-left: 45px;
     .container3 {
       display: block;
       max-width: 728px;
-      height: 1029px;
+      height: 908px;
       margin: 0 auto;
       padding-top: 60px;
-      padding-bottom: 60px;
-      //justify-content: space-between;
+      
     }
     
     .explore__text {
@@ -2302,7 +2301,7 @@ margin-left: 45px;
       line-height: 1.125;
       letter-spacing: 5px;
       width: 440px;
-      margin-bottom: 30px;
+      margin-bottom: 0;
       margin-top: 10px;
       position: relative;
       color: #ffffff;
@@ -2317,7 +2316,7 @@ margin-left: 45px;
       background-color: #710707;
       text-align: left;
       margin-top: 24px;
-      margin-bottom: 60px;
+      margin-bottom: 0;
       transition: 2s;
     }
     
@@ -2326,16 +2325,12 @@ margin-left: 45px;
       display: none;
     }
     
-    #explore__p3 {
-     opacity: 0;
-     height: 0;
-    }
     
     .explore__img {
       display: flex;
      align-items: center;
       justify-content: center;
-      margin-top: -73px;
+      margin-top: -13px;
     }
     
     
@@ -2344,10 +2339,10 @@ margin-left: 45px;
     
     .container4 {
       max-width: 728px;
-      height: 880px;
+      height: 835px;
       margin: 0 auto;
-      padding-top: 70px;
-      padding-bottom: 53px;
+      padding-top: 50px;
+      padding-bottom: 40px;
     }
     
     .video__body {
@@ -2373,8 +2368,8 @@ margin-left: 45px;
     
     .video__video {
      
-        height: 504px;
-        width: 984px;    
+        height: 395px;
+        width: 728px;    
         position: relative;    
     }
     
@@ -2382,13 +2377,13 @@ margin-left: 45px;
     .video__poster {
       display: block;
       max-width: 728px;
-      max-height: 444px;
+      max-height: 329px;
       
     }
     
     .button__poster__play {
-      width: 150px;
-      height: 150px;
+      width: 80px;
+      height: 80px;
       background: transparent;
       cursor: pointer;
       border: none;
@@ -2409,8 +2404,9 @@ margin-left: 45px;
       justify-content: space-between;
       background-color: #000000;
       width: 728px;
-      height: 60px;
+      height: 53px;
       line-height: 1.2;
+      position: relative;
     }
     
     .video__button__play,
@@ -2431,10 +2427,13 @@ margin-left: 45px;
     
     .progress__range {
       background: linear-gradient(to right, #710707 0%, #710707 40%, #ffffff 40%, #ffffff 100%);
-      border: none;
+      border: 1px solid #710707;
       height: 5px;
-      width: 570px;
-      margin-left: 12px;
+      width: 728px;
+      position: absolute;
+      top: -7px;
+      left: 0;
+      margin-left: 0;
       outline: none;
       transition: background 450ms ease-in;
       -webkit-appearance: none;
@@ -2444,7 +2443,7 @@ margin-left: 45px;
       background: linear-gradient(to right, #710707 0%, #710707 43%, #ffffff 43%, #ffffff 100%);
       border: none;
       height: 5px;
-      width: 145px;
+      width: 486px;
       outline: none;
       transition: background 450ms ease-in;
       -webkit-appearance: none;
@@ -2463,7 +2462,9 @@ margin-left: 45px;
     }
     
     .video__slides img {
-      max-width: 300px;
+      width: 354px;
+      margin-inline: 10px;
+      overflow: hidden;
     }
     .video__list {
       display: flex;
@@ -2505,7 +2506,7 @@ margin-left: 45px;
       
       position: relative;
       z-index: 1;
-      height: 1400px;
+      height: 1220px;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
@@ -2519,7 +2520,7 @@ margin-left: 45px;
     
     #galler figure {
       flex: 1; margin: 0;
-      max-width: 300px; position: relative;
+      max-width: 352px; position: relative;
       
       }
       
@@ -2559,17 +2560,17 @@ margin-left: 45px;
     
     .container5 {
       max-width: 728px;
-      height: 720px;
+      height: 633px;
       margin: 0 auto;
       
-      padding-top: 70px;
+      padding-top: 50px;
       padding-bottom: 0;
       margin-bottom: -70px;
       
     }
     
     .tickets__title {
-      font-size: 50px;
+      font-size: 40px;
       font-family: "Forum", cursive;
       font-weight: 400;
       line-height: 1.125;
@@ -2583,8 +2584,8 @@ margin-left: 45px;
     }
     
     .tickets__picture img {
-      width: 700px;
-      height: 440px;
+      width: 444px;
+      height: 340px;
       margin-top: -20px;
     }
     .tickets__order {
@@ -2672,7 +2673,7 @@ margin-left: 45px;
     }
     
     .order__sum {
-      margin-top: 23px;
+      margin-top: 33px;
       text-align: center;
       letter-spacing: 1.65px;
     }
@@ -2683,7 +2684,7 @@ margin-left: 45px;
       background-color: #000000;
       width: 175px;
       height: 50px;
-      margin-top: 68px;
+      margin-top: 28px;
       margin-left: 25px;
       align-items: center;
       text-align: center;
@@ -2747,6 +2748,10 @@ margin-left: 45px;
       font-size: 24px;
     
     }
+
+    .contacts__body {
+      display: block;
+    }
     
     .contacts__body__list{
       margin-top: -5px;
@@ -2771,24 +2776,38 @@ margin-left: 45px;
     
     /* footer*/
     
-    
+    .nav {
+      max-height: 311px;
+    }
     .nav-row {
       display: flex;
+      flex-wrap: wrap;
+      width: 728px;
+      margin-top: -10px;
+      
       
     }
     
     
-    
+    .navigation2 a {
+      font-size: 18px;
+      font-weight: 100;
+      font-family: "Roboto", sans-serif;
+    }
     
     .navigation2 {
       display: flex;
       justify-content: space-between;
       width: 310px;
       height: 128px;
-      margin-left: 200px;
+      margin-right: 40px;
+      
+      
+      
+      
      
     }
-    
+   
     
     .part1 {
       margin-right: 150px;
@@ -2796,6 +2815,8 @@ margin-left: 45px;
     
     .nets {
       width: 340px;
+      margin-left: 300px;
+      margin-top: -42px;
     }
     .socialnets li {
       margin: 0;
@@ -2807,18 +2828,19 @@ margin-left: 45px;
       margin-right: 0;
     }
     
-    
     .footer__hr {
-      border: 2px solid #666666;
+      border: 1px solid #666666;
       width: 100%;
-      margin-top: 115px;  
+      margin-top: 200px;  
       margin-bottom: 10px;
     }
     
     .footer__end {
-      max-width: 984px;
-      margin: 50px auto 0;
-      padding-bottom: 60px;
+      max-width: 728px;
+      height: 60px;
+      margin: 40px auto 0;
+
+      padding-bottom: 0;
     
     }
     
