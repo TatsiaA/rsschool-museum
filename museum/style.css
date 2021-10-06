@@ -3602,30 +3602,42 @@ padding-top: 53px;
       line-height: 1.125;
       letter-spacing: 5px;
       margin-top: -4px;
-      margin-bottom: 22px;
+      margin-bottom: 25px;
       position: relative;
       color: #9D8665;
       text-transform: uppercase;
     
     }
-
+    
+    .tickets_title hr {
+      margin-left: 0;
+      margin-bottom: 40px;
+      
+    }
     .tickets__picture {
       width: 380px;
-      height: 160px;
+      max-height: 160px;
+      margin-top: 0;
       overflow: hidden;
-     // background-image: url(./assets/img/img3-720x550h.jpg)
-     // background-size: cover;
-    }
+      margin-bottom: 58px;
+    }  
+    
     
     .tickets__picture img {
-      width: 380px;
-      height: 160px;
+      
+      width: 100%;
+      height: auto;
+      
+      
       margin-top: 0;
+     
+      transform: translate(0%, -23%);
+      
     }
     .tickets__order {
-      
+      margin-top: 0;
       display: block;
-      //justify-content: space-between;
+      
       color: #000000;
       font-family: "Roboto", sans-serif;
       
@@ -3634,32 +3646,39 @@ padding-top: 53px;
     .tickets__type {
       display: none;
     
-    }
-    
+    }    
     
     .order__title,
     .order__sum {
-      font-size: 28px;
+      font-size: 16px;
       font-weight: 700;
+      letter-spacing: 0;
+      
     }
     
     .order__title {
-      margin-bottom: 28px;
-      margin-top: -20px;
-      margin-left: 20px;
+      margin-bottom: 20px;
+      
+      margin-left: 2px;
+      letter-spacing: 0;
     }
     .order {
       max-width: 380px;
       padding-left: 0;
-      margin-right: 25px;
-      text-align: left;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
       
     
+    }
+    .order__basic,
+    .order__senior {
+      margin-left: 77px;
     }
     
     .order__age {
       font-family: "Roboto", sans-serif;
-      font-size: 22px;
+      font-size: 16px;
       font-weight: 200;
       text-align: left;
       margin-left: 25px;
@@ -3673,10 +3692,10 @@ padding-top: 53px;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      margin-left: 23px;
+      margin-left: 25px;
       border: 3px solid #000000;
-      height: 46px;
-      width: 175px;
+      height: 44px;
+      width: 169px;
       
     }
     
@@ -3689,7 +3708,7 @@ padding-top: 53px;
       font-family: Roboto;
       font-style: normal;
       font-weight: 300;
-      font-size: 22px;
+      font-size: 16px;
       line-height: 26px;
       text-align: center;
       color: #000000;
@@ -3704,12 +3723,15 @@ padding-top: 53px;
       color: #000000;
       background: transparent;
       border: none;
+      ma
     }
     
     .order__sum {
-      margin-top: 33px;
+      
+      margin-top: 40px;
+      
       text-align: center;
-      letter-spacing: 1.65px;
+      letter-spacing: 0;
     }
     
     .button1 {
@@ -3718,13 +3740,13 @@ padding-top: 53px;
       background-color: #000000;
       width: 175px;
       height: 50px;
-      margin-top: 28px;
-      
-      margin-left: 25px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      margin-left: 0;
       align-items: center;
       text-align: center;
       font-family: "Roboto", sans-serif;
-      font-size: 22px;
+      font-size: 16px;
       font-weight: 300;
       line-height: 1.75em;
       letter-spacing: 2px;
@@ -3736,11 +3758,13 @@ padding-top: 53px;
     
     .parallax {
       width: 100%;
-      height: 400px;
-      margin-top: 140px;
-      margin-bottom: 70px;
+      height: 300px;
+      margin-top: 100px;
+      margin-bottom: 40px;
+      
       background-image: url(./assets/img/parallax.jpg);
       background-size: cover;
+      background-position: center;
       background-attachment: fixed;
     }
     
@@ -3749,12 +3773,18 @@ padding-top: 53px;
     
     .container6 {
       max-width: 380px;
+      height: 566px;
       margin: 0 auto;
       
       padding-bottom: 25px;
     }
     
+    .container6 hr {
+      margin-left: 0;
+      margin-top: 22px;
+    }
     .contacts__title {
+      margin-top: 2px;
       
       font-size: 28px;
       font-weight: 400;
@@ -3776,11 +3806,12 @@ padding-top: 53px;
     }
     
     .contact__title {
+      margin-top: 45px;
       margin-bottom: 51px;
       padding-bottom: 5px;
       font-family: "Roboto", sans-serif;
       font-weight: 500;
-      font-size: 24px;
+      font-size: 16px;
     
     }
 
