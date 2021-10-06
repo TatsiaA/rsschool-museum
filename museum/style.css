@@ -2261,6 +2261,7 @@ padding-top: 53px;
     
     .title__underline {
       border: 1px solid #710707;
+      background-color: #710707;
       width: 984px;
       height: 1px;
       text-align: left;
@@ -2272,7 +2273,7 @@ padding-top: 53px;
     .visiting__underline {
       border: 1px solid #710707;
       width: 150px;
-      
+      background-color: #710707;
       text-align: left;
       margin-top: 9px;
       margin-bottom: 10px;
@@ -2855,8 +2856,11 @@ padding-top: 53px;
 
     @media (max-width: 730px) {
 
-  /* Footer */
+  /* Header */
   
+  .header {
+    height: 90px;
+  }
   .nav {
     max-width: 380px;
     height: 90px;
@@ -2864,13 +2868,18 @@ padding-top: 53px;
   }
   .nav-row {
     max-width: 380px;
+    
+    
   }
 
   .logo {
        
     font-size: 16px;        
     width: 130px;
-    
+    margin-left: 5px;
+    margin-top: 0;
+    margin-top: -5px;
+    z-index: 1;
   }
   
   .logo img {
@@ -2885,6 +2894,7 @@ padding-top: 53px;
     display: flex;
     width: 30px;
     height: 18px;
+    margin-top: -7px;
     
     position: relative;
     z-index: 1;
@@ -2994,14 +3004,19 @@ padding-top: 53px;
     height: 544px;
     margin: 0 auto;
     position: relative;
+    background-color: #030303;
   }
    
+  .welcome {
+    height: 544px;
+    background-color: #030303;
+  }
   .welcome-row {
     display: block;
     justify-content: center;
     max-width: 380px;
     height: 464px;
-    padding-bottom: 0;
+    margin-bottom: 0px;
     text-align: center;
     
        
@@ -3013,6 +3028,8 @@ padding-top: 53px;
       text-align: center;
       max-width: 380px;
       height: 179px;
+      padding-top: 5px;
+      margin-left: -1px;
       margin-top: 0;
       
     }
@@ -3034,10 +3051,10 @@ padding-top: 53px;
       font-size: 28px;
       font-family: "Forum", cursive;
       font-weight: 400;
-      line-height: 1.75;
+      line-height: 1.5;
       letter-spacing: 5px;
       margin-bottom: 0px;
-      margin-top: 0px;
+      margin-top: -2px;
       position: relative; 
       z-index: 9;
     }
@@ -3048,6 +3065,8 @@ padding-top: 53px;
       font-family: "Roboto", sans-serif;
       letter-spacing: 2px;
       padding-bottom: 10px;
+      padding-top: 22px;
+
       text-align: center;
       position: relative; 
       z-index: 9;
@@ -3060,7 +3079,7 @@ padding-top: 53px;
       margin: 0;
       padding: 0;
       right: 0;
-      top: 0;
+      top: -17px;
       
       position: relative;
     }
@@ -3078,8 +3097,9 @@ padding-top: 53px;
     .welcome_pagination {
      height: 80px;
      margin: 0 auto;
-     margin-top: 0;
-     opacity: 0.6;
+     margin-top: -40px;
+     padding: 0;
+     opacity: 1;
      background-color: #030303;
       
     }
@@ -3087,30 +3107,31 @@ padding-top: 53px;
       
       width: 380px;
       height: 80px;
+      
       position: relative;
-     
+      justify-content: center;
                 
       
       
     }
     
-    .welcome_pagination:hover {  
-      opacity: 1;
-      transition: 0.8s;
-    }
     
     
     /*section 2 Visiting*/
     
-    
+    .visiting {
+      height: 2113px;
+    }
     .container2 {
       max-width: 380px;
-      height:auto;
-      margin: 45px auto 0;
+      margin: 40px auto 0;
       
     }
     
     .visiting__title {
+      margin-left: -10px;
+      
+      padding-top: 4px;
       font-size: 28px;
       font-weight: 400;
       letter-spacing: 5px;
@@ -3125,7 +3146,7 @@ padding-top: 53px;
       display: block;
       box-sizing: content-box;
       justify-content: space-around;
-      margin: 50px;
+      margin: 40px;
       margin-bottom: 0;
       
     }
@@ -3138,30 +3159,37 @@ padding-top: 53px;
     .figure1 figcaption {
       width: 280px;
       height: 120px;
-      padding-bottom: 40px;
+      padding-bottom: 18px;
       border: 0;
       margin: 0 auto;
       justify-content: center;
     
     }
     
+    .figure1 {
+      width: 280px;
+    }
+
     .figure1 img {
       display: block;
-      width: 280px;
+      width: 100%;
       height: 180px;
+      background-size: contain;
       margin-left: auto;
       margin-right: auto;
-      padding-bottom: 20px;
+      
+      padding-bottom: 17px;
       border: 0;
-      margin: 0 auto;
+      
     }
     
     .pages__title {
+     
       text-decoration: none;
       font-size: 18px;
       font-family: "Forum", cursive;
       font-weight: 400;
-      letter-spacing: 3px;
+      letter-spacing: 5px;
       line-height: 35px;
       text-transform: uppercase;
       color: #000000;
@@ -3169,6 +3197,7 @@ padding-top: 53px;
     
     
     .pages__360 {
+     
       font-family: "Roboto", sans-serif;
       font-size: 16px;
       font-weight: 100;
@@ -3177,29 +3206,33 @@ padding-top: 53px;
     
     .pages__text {
       padding-top: 10px;
-      
+     
       font-size: 16px;
       font-weight: 100;
       
     }
     
     .title__underline {
+      margin-left: -10px;
+      
       border: 1px solid #710707;
+      background-color: #710707;
       width: 380px;
       height: 1px;
       text-align: left;
-      margin-top: 30px;
-      margin-bottom: 33px;  
+      margin-top: 25px;
+      margin-bottom: 25px;  
       color: #710707;
     }
     
     .visiting__underline {
-      border: 1px solid #710707;
+      border: none;
+      background-color: #710707;
       width: 150px;
-      
+      height: 2px;
       text-align: left;
-      margin-top: 9px;
-      margin-bottom: 10px;
+      margin-top: 3px;
+      margin-bottom: 11px;
       transition: 1s;
     }
     
@@ -3213,15 +3246,16 @@ padding-top: 53px;
     .container3 {
       display: block;
       max-width: 380px;
-      height: 551px;
+      height: 481px;
       margin: 0 auto;
-      padding-top: 60px;
+      padding: 35px;
       
     }
     
     .explore__text {
+      width: 100%;
       display: block;
-      padding-bottom: 35px;
+     
     
     }
     
@@ -3232,13 +3266,11 @@ padding-top: 53px;
       line-height: 1.125;
       letter-spacing: 5px;
       width: 367px;
-      margin-bottom: 0;
-      margin-top: 10px;
+      margin-left: -25px;
       position: relative;
-      color: #ffffff;
       text-transform: uppercase;
       position: relative; 
-      z-index: 9;
+      
     }
     
     .explore_title__underline {
@@ -3248,6 +3280,7 @@ padding-top: 53px;
       text-align: left;
       margin-top: 24px;
       margin-bottom: 0;
+      margin-left: -25px;
       transition: 2s;
     }
     
@@ -3258,11 +3291,10 @@ padding-top: 53px;
     
     
     .explore__img {
-      width: 380px;
+      width: 100%;
       height: 368px;
       display: flex;
-     align-items: center;
-      justify-content: center;
+     
      
     }
     
