@@ -3212,7 +3212,7 @@ padding-top: 53px;
     }
     
     .pages__text {
-      padding-top: 10px;
+      padding-top: 9px;
      
       font-size: 16px;
       font-weight: 100;
@@ -3577,7 +3577,7 @@ padding-top: 53px;
       .img__mask img {
         width: 100%;
         position: absolute;
-        bottom: 0;
+        
       }
     
     
@@ -3674,6 +3674,7 @@ padding-top: 53px;
     .order__basic,
     .order__senior {
       margin-left: 77px;
+      
     }
     
     .order__age {
@@ -3682,8 +3683,8 @@ padding-top: 53px;
       font-weight: 200;
       text-align: left;
       margin-left: 25px;
-      margin-bottom: 10px;
-      margin-top: 25px;
+      margin-bottom: 15px;
+      margin-top: 20px;
       //justify-content: end;
     }
     
@@ -3799,7 +3800,7 @@ padding-top: 53px;
       list-style: none;
       font-weight: 300;
       font-size: 16px;
-      line-height: 26px;
+      line-height: 24px;
       padding-left: -40px;
       margin: 0;
       padding: 0;
@@ -3807,7 +3808,7 @@ padding-top: 53px;
     
     .contact__title {
       margin-top: 45px;
-      margin-bottom: 51px;
+      margin-bottom: 53px;
       padding-bottom: 5px;
       font-family: "Roboto", sans-serif;
       font-weight: 500;
@@ -3856,8 +3857,14 @@ padding-top: 53px;
     
     .logo_footer {
       font-size: 16px;
+      margin-top: 0;
+      margin-left: -2px;
     }
     
+    .logo_footer img {
+     width: 29px;
+     
+    }
     .navigation2 a {
       font-size: 16px;
       font-weight: 100;
@@ -3869,12 +3876,10 @@ padding-top: 53px;
       justify-content: space-between;
       width: 310px;
       height: 128px;
-      margin-right: 10px;
+      margin-right: 10px; 
+      margin-left: 200px; 
       
       
-      
-      
-     
     }
    
     
@@ -3886,8 +3891,8 @@ padding-top: 53px;
       width: 260px;
       margin-left: auto;
       margin-right: auto;
-      margin-top: 0;
-      padding-bottom: 40px;
+      margin-top: 20px;
+      //padding-bottom: 40px;
     }
     .socialnets li {
       margin: 0;
@@ -3902,7 +3907,7 @@ padding-top: 53px;
     .footer__hr {
       border: 1px solid #666666;
       width: 100%;
-      margin-top: 200px;  
+      margin-top: 209px;  
       margin-bottom: 10px;
     }
     
