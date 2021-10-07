@@ -2235,7 +2235,7 @@ height: 120px;
     .container2 {
       max-width: 728px;
       max-height: 1430px;
-      margin: 65px auto 0;
+      margin: 113px auto 44px;
       
     }
     
@@ -2254,7 +2254,7 @@ height: 120px;
       flex-basis: 50%;
       box-sizing: border-box;
       justify-content: space-around;
-      margin: 50px;
+      margin: 0;
       margin-bottom: 0;
       
     }
@@ -2263,6 +2263,11 @@ height: 120px;
       flex: 0 0 50%;
     }
     
+    .figure1 {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: -20px;
+    }
     
     .figure1 figcaption {
       width: 280px;
@@ -2270,6 +2275,8 @@ height: 120px;
       padding-bottom: 40px;
       border: 0;
       margin: 0 auto;
+      padding-top: 20px;
+      padding-left: 5px;
       justify-content: center;
     
     }
@@ -2278,11 +2285,11 @@ height: 120px;
       display: block;
       width: 280px;
       height: 180px;
-      margin-left: auto;
-      margin-right: auto;
-      padding-bottom: 20px;
+      padding-bottom: 0;
       border: 0;
       margin: 0 auto;
+      
+      
     }
     
     .pages__title {
@@ -2306,6 +2313,7 @@ height: 120px;
     
     .pages__text {
       padding-top: 10px;
+      padding-bottom: 0;
       
       font-size: 16px;
       font-weight: 100;
@@ -2315,20 +2323,21 @@ height: 120px;
     .title__underline {
       border: 1px solid #710707;
       background-color: #710707;
-      width: 984px;
+      width: 728px;
       height: 1px;
       text-align: left;
-      margin-top: 30px;
-      margin-bottom: 63px;  
+      margin-top: 29px;
+      margin-bottom: 40px;  
       color: #710707;
     }
     
     .visiting__underline {
       border: 1px solid #710707;
       width: 150px;
+      height: 0;
       background-color: #710707;
       text-align: left;
-      margin-top: 9px;
+      margin-top: 5px;
       margin-bottom: 10px;
       transition: 1s;
     }
@@ -2343,9 +2352,10 @@ height: 120px;
     .container3 {
       display: block;
       max-width: 728px;
-      height: 908px;
+      height: 810px;
       margin: 0 auto;
-      padding-top: 60px;
+      padding-top: 37px;
+     
       
     }
     
@@ -2376,7 +2386,7 @@ height: 120px;
       border: 2px solid #710707;
       background-color: #710707;
       text-align: left;
-      margin-top: 24px;
+      margin-top: 26px;
       margin-bottom: 0;
       transition: 2s;
     }
@@ -2391,7 +2401,9 @@ height: 120px;
       display: flex;
      align-items: center;
       justify-content: center;
-      margin-top: -13px;
+      margin-top: -8px;
+      margin-left: -15px;
+      
     }
     
     
