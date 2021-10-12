@@ -174,7 +174,13 @@
                           in any way, but because it looked different.</p>
                 </div>
                 <div class="explore__img">
-                    <img src="./assets/img/Group-51.jpg" alt="picture">
+                    <div class="img-comp-img">
+                        <img src="./assets/img/Rectangle.jpg" alt="picture" width="100%" height="100%">
+                      </div>
+                    <div class="img-comp-img img-comp-overlay">
+                        <img src="./assets/img/img2-720x700h.jpg" alt="picture" width="100%" height="100%">
+                      </div>
+      
                 </div>
 
             </div>
@@ -190,14 +196,15 @@
                       Code</p>
                 </div>
                 <div class="video__video" id="Vid">
-                   <video src="https://youtu.be/zp1BXPX8jcU" poster="./assets/img/forvideo1440x629h.jpg" preload="metadata" class="video__poster" id="video"></video>
+                   <video src="https://www.youtube.com/embed/zp1BXPX8jcU?modestbranding=1&controls=0" poster="./assets/img/forvideo1440x629h.jpg" preload="metadata" class="video__poster" id="video"></video>
                    
                     <button type="button" class="button__poster__play" id="playBtnBig">
                         <img src="./assets/svg/play.svg" alt="play_button">
                     </button>
+                    <div class="overlay hidden" id="overlay"></div>
                     <div class="control__panel" id="controls">
                         
-                        <button type="button" class="video__button__play" id="playBtn">
+                        <button type="button" class="video__button__play play" id="playBtn">
                             <img src="./assets/svg/Play_control.svg" alt="play">
                         </button>
                         
@@ -402,5 +409,8 @@
     <script src="./assets/js/range.js" defer></script>
     <script src="./assets/js/gallery.js"></script>
     <script src="./assets/js/burger.js"></script>
+    <script>
+        initComparisons();
+        </script>
 </body>
 </html>
