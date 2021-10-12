@@ -1,17 +1,22 @@
-const progress = document.querySelector('.progress__range');
+const progress = document.querySelector('.video-progress');
 progress.addEventListener('input', function() {
   const value = this.value;
   this.style.background = `linear-gradient(to right, #710707 0%, #710707 ${value}%, #ffffff ${value}%, #ffffff 100%)`
-})
+});
 
-const progress_volume = document.querySelector('.progress__range__volume');
+const progress_volume = document.querySelector('.volume-progress');
 progress_volume.addEventListener('input', function() {
   const value = this.value;
   this.style.background = `linear-gradient(to right, #710707 0%, #710707 ${value}%, #ffffff ${value}%, #ffffff 100%)`
-})
+});
 
 let timerOverlay;
 let timerCursor;
+
+
+// control of the progress bar display
+const progressBarApperance = (value) =>`
+  linear-gradient(to right, #710707 0%, #710707 ${value}%, #c4c4c4 ${value}%, #c4c4c4 100%)`;
 
 // mute control
 const muteAudio = () => {
@@ -126,12 +131,12 @@ document.addEventListener('keydown', (e) => {
 // change the display of play buttons
 video.addEventListener('play', () => {
   playBtn.className = 'play pause';
-  playBtnBig.className = 'big-play hidden';
+  playBtnBig.className = 'button__poster__play hidden';
 });
 
 video.addEventListener('pause', () => {
   playBtn.className = 'play';
-  playBtnBig.className = 'big-play';
+  playBtnBig.className = 'button__poster__play';
 });
 
 // control the display of the video progress bar
@@ -206,5 +211,4 @@ document.addEventListener('fullscreenchange', () => {
     controls.style.opacity = 1;
   };
 });
- 
 

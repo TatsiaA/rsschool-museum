@@ -196,24 +196,23 @@
                       Code</p>
                 </div>
                 <div class="video__video" id="Vid">
-                   <video src="https://www.youtube.com/embed/zp1BXPX8jcU?modestbranding=1&controls=0" poster="./assets/img/forvideo1440x629h.jpg" preload="metadata" class="video__poster" id="video"></video>
-                   
-                    <button type="button" class="button__poster__play" id="playBtnBig">
+                    <video src="./assets/video/video0.mp4" poster="./assets/img/forvideo1440x629h.jpg" preload="metadata" class="video__poster" id="video"></video>
+                    <button type="button" title="play / pause" class="button__poster__play" id="playBtnBig">
                         <img src="./assets/svg/play.svg" alt="play_button">
                     </button>
                     <div class="overlay hidden" id="overlay"></div>
-                    <div class="control__panel" id="controls">
+                    <div class="controls" id="controls">
                         
-                        <button type="button" class="video__button__play play" id="playBtn">
+                        <button type="button" title="play / pause" class="play" id="playBtn">
                             <img src="./assets/svg/Play_control.svg" alt="play">
                         </button>
                         
-                        <input type="range" value="40" min="0" max="100" step="1" class="progress__range" id="progress">
-                        <button type="button" class="video__button__volume" id="muteBtn">
+                        <input type="range" value="40" min="0" max="100" step="1" class="video-progress" id="progress">
+                        <button type="button" class="volume" id="muteBtn">
                             <img src="./assets/svg/volume.svg" alt="volume">
                         </button>
-                        <input type="range" value="43" min="0" max="100" step="1" class="progress__range__volume" id="vol">
-                        <button type="button" class="video__button__fullscreen" id="fullscreenBtn">
+                        <input type="range" value="43" min="0" max="100" step="1" class="volume-progress" id="vol">
+                        <button type="button" class="fullscreen" id="fullscreenBtn">
                             <img src="./assets/svg/fullscreen_control.svg" alt="fullscreen">
                         </button>
                     </div>

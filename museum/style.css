@@ -576,12 +576,12 @@ h1 {
   cursor: pointer;
   border: none;
   position: absolute;
-  left: 616px;
+  left: 619px;
   right: 610px;
   top: 293px;
 }
 
-.control__panel {
+.controls {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -591,9 +591,9 @@ h1 {
   line-height: 1.2;
 }
 
-.video__button__play,
-.video__button__volume, 
-.video__button__fullscreen {
+.play,
+.volume, 
+.fullscreen {
   background: transparent;
   margin-left: 29px;
   margin-right: 25px;
@@ -603,7 +603,7 @@ h1 {
   border: none;
 }
 
-.progress__range {
+.video-progress {
   background: linear-gradient(to right, #710707 0%, #710707 40%, #ffffff 40%, #ffffff 100%);
   border: solid 2px #710707;
   height: 6px;
@@ -614,7 +614,7 @@ h1 {
   -webkit-appearance: none;
 }
 
-.progress__range__volume {
+.volume-progress {
   background: linear-gradient(to right, #710707 0%, #710707 43%, #ffffff 43%, #ffffff 100%);
   border: solid 2px #710707;
   height: 6px;
@@ -624,8 +624,8 @@ h1 {
   -webkit-appearance: none;
 }
 
-.progress__range::-webkit-slider-thumb, 
-.progress__range__volume::-webkit-slider-thumb {
+.video-progress::-webkit-slider-thumb, 
+.volume-progress::-webkit-slider-thumb {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -635,7 +635,7 @@ h1 {
 }
 
 
-.video__button__fullscreen {
+.fullscreen {
   margin-left: 50px;
   margin-right: 28px;
 }
@@ -1668,7 +1668,7 @@ height: 120px;
   width: 100%;
 }
 
-.control__panel {
+.controls {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1678,9 +1678,9 @@ height: 120px;
   line-height: 1.2;
 }
 
-.video__button__play,
-.video__button__volume, 
-.video__button__fullscreen {
+.play,
+.volume, 
+.fullscreen {
   background: transparent;
   
   margin-left: 40px;
@@ -1688,13 +1688,13 @@ height: 120px;
   
 }
 
-.video__button__play img,
-.video__button__volume img, 
-.video__button__fullscreen img {
+.play img,
+.volume img, 
+.fullscreen img {
   width: 25px;
 }
 
-.progress__range {
+.video-progress {
   background: linear-gradient(to right, #710707 0%, #710707 40%, #ffffff 40%, #ffffff 100%);
   border: none;
   height: 5px;
@@ -1705,7 +1705,7 @@ height: 120px;
   -webkit-appearance: none;
 }
 
-.progress__range__volume {
+.volume-progress {
   background: linear-gradient(to right, #710707 0%, #710707 43%, #ffffff 43%, #ffffff 100%);
   border: none;
   height: 5px;
@@ -1715,7 +1715,7 @@ height: 120px;
   -webkit-appearance: none;
 }
 
-.video__button__fullscreen {
+.fullscreen {
   margin-left: 30px;
   margin-right: 39px;
 }
@@ -2591,7 +2591,7 @@ height: 120px;
       width: 100%;
     }
     
-    .control__panel {
+    .controls {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -2603,9 +2603,9 @@ height: 120px;
       position: relative;
     }
     
-    .video__button__play,
-    .video__button__volume, 
-    .video__button__fullscreen {
+    .play,
+    .volume, 
+    .fullscreen {
       background: transparent;
       
       margin-left: 30px;
@@ -2613,17 +2613,17 @@ height: 120px;
       
     }
 
-    .video__button__volume {
+    .volume {
       margin-left: 0;
     }
     
-    .video__button__play img,
-    .video__button__volume img, 
-    .video__button__fullscreen img {
+    .play img,
+    .volume img, 
+    .fullscreen img {
       width: 25px;
     }
     
-    .progress__range {
+    .video-progress {
       background: linear-gradient(to right, #710707 0%, #710707 40%, #ffffff 40%, #ffffff 100%);
       border: 1px solid #710707;
       height: 5px;
@@ -2637,7 +2637,7 @@ height: 120px;
       -webkit-appearance: none;
     }
     
-    .progress__range__volume {
+    .volume-progress {
       background: linear-gradient(to right, #710707 0%, #710707 43%, #ffffff 43%, #ffffff 100%);
       border: none;
       height: 5px;
@@ -2647,7 +2647,7 @@ height: 120px;
       -webkit-appearance: none;
     }
     
-    .video__button__fullscreen {
+    .fullscreen {
       margin-left: 30px;
       margin-right: 28px;
     }
@@ -3561,7 +3561,11 @@ height: 120px;
         margin-left: -7px;
         position: relative;    
     }
-    
+    .video__video:fullscreen > .controls {
+      background-color: transparent;
+      transition: opacity 1000ms;
+      opacity: 0;
+    }
     
     .video__poster {
       display: block;
@@ -3588,7 +3592,10 @@ height: 120px;
       width: 100%;
     }
     
-    .control__panel {
+    .button__poster__play:visited {
+      display: none;
+    }
+    .controls {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -3599,9 +3606,9 @@ height: 120px;
       position: relative;
     }
     
-    .video__button__play,
-    .video__button__volume, 
-    .video__button__fullscreen {
+    .play,
+    .volume, 
+    .fullscreen {
       background: transparent;
       
       margin-left: 20px;
@@ -3610,17 +3617,17 @@ height: 120px;
       
     }
     
-    .video__button__play img,
-    .video__button__fullscreen img {
+    .play img,
+    .fullscreen img {
       width: 14px;
     }
 
-    .video__button__volume img {
+    .volume img {
       width: 18px;
       margin-left: -20px;
     }
     
-    .progress__range {
+    .video-progress {
       background: linear-gradient(to right, #710707 0%, #710707 40%, #ffffff 40%, #ffffff 100%);
       border: 1px solid #710707;
       height: 3px;
@@ -3634,7 +3641,7 @@ height: 120px;
       -webkit-appearance: none;
     }
     
-    .progress__range__volume {
+    .volume-progress {
       background: linear-gradient(to right, #710707 0%, #710707 43%, #ffffff 43%, #ffffff 100%);
       border: none;
       height: 3px;
@@ -3647,13 +3654,13 @@ height: 120px;
       -webkit-appearance: none;
     }
     
-    .video__button__fullscreen {
+    .fullscreen {
       width: 18px;
       margin-left: 20px;
       margin-right: 20px;
     }
 
-    .video__button__fullscreen img {
+    .fullscreen img {
       width: 100%;
     }
     .invis {
