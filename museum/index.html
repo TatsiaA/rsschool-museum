@@ -31,7 +31,7 @@
                         <ul class="nav_list">
                             <li> <a href="#V">Visiting</a> </li>
                             <li> <a href="#P">Explore</a> </li>
-                            <li> <a href="#Video">Video</a> </li>
+                            <li> <a href="#Vid">Video</a> </li>
                             <li> <a href="#G">Gallery</a> </li>
                             <li> <a href="#Buy">Tickets</a> </li>
                             <li> <a href="#C">Contacts</a> </li>
@@ -56,7 +56,21 @@
                         
                     </div>
                     <div class="welcome-img">
-                       <img src="./assets/img/1-1000x750.jpg" alt="img"> 
+                        <div class="item-welcome welcome-active">
+                            <img class="slide-img" src="./assets/img/welcome-slider/1.jpg" alt="picture">
+                        </div>
+                        <div class="item-welcome">
+                            <img class="slide-img" src="./assets/img/welcome-slider/2.jpg" alt="picture">
+                        </div>
+                        <div class="item-welcome">
+                            <img class="slide-img" src="./assets/img/welcome-slider/3.jpg" alt="picture">
+                        </div>
+                        <div class="item-welcome">
+                            <img class="slide-img" src="./assets/img/welcome-slider/4.jpg" alt="picture">
+                        </div>
+                        <div class="item-welcome">
+                            <img class="slide-img" src="./assets/img/welcome-slider/5.jpg" alt="picture">
+                        </div>
                     </div>
                     
 
@@ -175,24 +189,24 @@
                       masterpieces such as Mona Lisa or Hammurabi's 
                       Code</p>
                 </div>
-                <div class="video__video" id="Video">
-                  
-                    <img src="./assets/img/forvideo1440x629h.jpg" alt="video_poster" class="video__poster">
-                    <button type="button" class="button__poster__play">
+                <div class="video__video" id="Vid">
+                   <video src="https://youtu.be/zp1BXPX8jcU" poster="./assets/img/forvideo1440x629h.jpg" preload="metadata" class="video__poster" id="video"></video>
+                   
+                    <button type="button" class="button__poster__play" id="playBtnBig">
                         <img src="./assets/svg/play.svg" alt="play_button">
                     </button>
-                    <div class="control__panel">
+                    <div class="control__panel" id="controls">
                         
-                        <button type="button" class="video__button__play">
+                        <button type="button" class="video__button__play" id="playBtn">
                             <img src="./assets/svg/Play_control.svg" alt="play">
                         </button>
                         
-                        <input type="range" value="40" min="0" max="100" step="1" class="progress__range">
-                        <button type="button" class="video__button__volume">
+                        <input type="range" value="40" min="0" max="100" step="1" class="progress__range" id="progress">
+                        <button type="button" class="video__button__volume" id="muteBtn">
                             <img src="./assets/svg/volume.svg" alt="volume">
                         </button>
-                        <input type="range" value="43" min="0" max="100" step="1" class="progress__range__volume">
-                        <button type="button" class="video__button__fullscreen">
+                        <input type="range" value="43" min="0" max="100" step="1" class="progress__range__volume" id="vol">
+                        <button type="button" class="video__button__fullscreen" id="fullscreenBtn">
                             <img src="./assets/svg/fullscreen_control.svg" alt="fullscreen">
                         </button>
                     </div>
@@ -350,7 +364,7 @@
                             
                                 <li> <a href="#V">Visiting</a> </li>
                                 <li> <a href="#P">Explore</a> </li>
-                                <li> <a href="#Video">Video</a> </li>
+                                <li> <a href="#Vid">Video</a> </li>
                         </ul>
                         <ul class="navigation2__list2">                     
                                 <li> <a href="#G">Gallery</a> </li>
