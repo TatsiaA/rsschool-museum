@@ -188,6 +188,53 @@ h1 {
 .welcome-img img {
   width: 100%;
 }
+.item-welcome {
+  display: none;
+  position: relative;
+  max-width: 984px;
+  height: inherit;
+  animation: .5s ease-in-out;
+}
+
+
+.to-left {
+  animation-name: left;
+}
+
+.from-right {
+  animation-name: right;
+}
+
+.to-right {
+  animation-name: right;
+  animation-direction: reverse;
+}
+
+.from-left {
+  animation-name: left;
+  animation-direction: reverse;
+}
+
+@keyframes left {
+  from {
+      left: 0;
+  }
+  to {
+      left: -100%;
+  }
+}
+
+@keyframes right {
+  from {
+      left: 100%;
+  }
+  to {
+      left: 0;
+  }
+}
+
+
+
 
 .welcome__button {
   cursor: pointer;
