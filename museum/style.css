@@ -481,7 +481,7 @@ h1 {
   content: '';
   height: 313px;
   width: 4px;
-  background: white;
+  background: #ffffff;
 }
 
 .img-comp-slider::after {
@@ -517,7 +517,7 @@ h1 {
   padding: 0 14px;
   font-size: 32px;
   line-height: 60px;
-  color: #c4c4c4;
+  color: #ffffff;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
@@ -564,11 +564,21 @@ h1 {
     padding-top: 77px;
     padding-left: 8px;
 }
+.video-video:fullscreen > .controls {
+  background-color: transparent;
+  transition: opacity 1000ms;
+  opacity: 0;
+}
+
 
 .video__poster {
   display: block;
   width: 1440px;
   height: 650px;
+}
+
+button:hover {
+  filter: brightness(80%);
 }
 
 .button__poster__play {
@@ -581,6 +591,9 @@ h1 {
   top: 293px;
 }
 
+.pause {
+  background: no-repeat url(./assets/svg/pause.svg);
+}
 .controls {
   display: flex;
   align-items: center;
@@ -591,6 +604,20 @@ h1 {
   line-height: 1.2;
 }
 
+input::-webkit-slider-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  appearance: none;
+  cursor: ew-resize;
+  background: #fff;
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.controls:hover > input::-webkit-slider-thumb {
+  opacity: 1;
+}
 .play,
 .volume, 
 .fullscreen {
@@ -601,6 +628,7 @@ h1 {
   cursor: pointer;
   transition: .5s;
   border: none;
+  transition: 400ms;
 }
 
 .video-progress {
@@ -638,6 +666,10 @@ h1 {
 .fullscreen {
   margin-left: 50px;
   margin-right: 28px;
+}
+
+.video__video:fullscreen > .controls > .fullscreen:hover {
+  transform: scale(0.94);
 }
 
 .video__slides {
